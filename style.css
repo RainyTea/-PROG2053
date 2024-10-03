@@ -16,6 +16,9 @@
 body {
     font-family: 'Roboto-Light', sans-serif;
     background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3 {
@@ -121,7 +124,6 @@ nav a {
     height: 150px;
     width: 250px;
     background-color: white;
-    border-radius: 5px;
     border-radius: 10px;
     border: 3px solid blue;
     margin-right: 20px;
@@ -213,11 +215,134 @@ nav a {
     margin: 0 80px;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 0.8rem;
+    margin-top: auto;
 }
 
 
 /* Dynamic content Loading */
 
+.Decobox {
+    height: 250px;
+    width: 350px;
+    background-color: rgb(50, 99, 172);
+    color: white;
+    border-radius: 15px;
+    border: 3px solid rgb(7, 12, 34);
+}
+.DCcontainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* display in grid of 3 */ 
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    margin-top: 40px;
+}
 
+.deco-title {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 1.5rem;
+    margin: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.deco-para {
+    font-family: 'Roboto-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
 
 /* Real-time Data Display */
+
+#longitude-input {
+    background-color: rgb(50, 99, 172);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+#latitude-input {
+    background-color: rgb(50, 99, 172);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+#search-button {
+    background-color:  rgb(50, 99, 172);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#search-button:hover {
+    background:  rgb(34, 161, 121);
+}
+
+
+.Weather-input {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgb(7, 12, 34);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1000px; 
+    margin: 120px auto; /* Centers box w/location and search Y=120px */
+    box-shadow: 0 5px 35px rgb(34, 161, 121);
+}
+
+
+.WCtitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.weatherBox {
+    max-width: 1022px; 
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    color: white;
+    background: rgb(7, 12, 34);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 35px rgb(34, 161, 121);
+}
+
+.LOCtitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.weatherBox2 {
+    max-width: 1022px; 
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    color: white;
+    background: rgb(7, 12, 34);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 35px rgb(34, 161, 121);
+}

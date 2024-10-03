@@ -6,9 +6,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Content Loading</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./DCL.js" defer></script> -->
 </head>
 <body>
-    
+    <section class= "header"> <!-- top header with title and three links -->
+        <div class="logo"><b>Dynamic Content Loading</b></div>
+        <nav>  
+            <a href="index.html">Home</a> <!-- hyperlink tag <a> -->
+            <a href="DCL.html">Dynamic content</a>
+            <a href="RTDD.html">Weather</a>
+        </nav>
+        <hr>
+    </section>
+
+    <section>
+        <div id="DCcontainer" class="DCcontainer"> <!-- Load and display getid -->
+
+        </div>
+    </section>
+
+    <footer class="Copyright">
+        <p>Copyright ©</p>
+    </footer>
+    <script src="./DCL.js" defer></script>
 </body>
 </html>

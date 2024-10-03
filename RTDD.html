@@ -3,11 +3,43 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Real Time Weather Update</title>
+     <!-- Icon for search is from W3schools -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+     <link rel="stylesheet" type="text/css" href="./style.css" />
+     
  </head>
  <body>
+     <section class= "header"> <!-- top header with title and three links -->
+         <div class="logo"><b>Real Time Weather Update</b></div>
+         <nav>  
+             <a href="index.html">Home</a> <!-- hyperlink tag <a> -->
+             <a href="DCL.html">Dynamic content</a>
+             <a href="RTDD.html">Weather</a>
+         </nav>
+         <hr>
+     </section>
+     <div class="Weather-input">
+         
+         <!-- <input type="text" name="city" id="city-input" placeholder="Enter location"> -->
+         <input type="text" id="latitude-input" placeholder="Enter latitude">
+         <input type="text" id="longitude-input" placeholder="Enter longitude">
+         <button onclick= "fetchWeather()" id= "search-button"><i class="fa fa-search"></i> Search</button>
+     </div>
+
+     <!-- inspiration from yr.no -->
+     <div id="Weather-container">
+
+     </div>
+     <div id = "Weather-MultiContainer">
+     </div>
     
+     <footer class="Copyright">
+         <p>Copyright ©</p>
+     </footer>
+     <script src="RTDD.js" defer></script>
  </body>
  </html>
